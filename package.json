@@ -1,0 +1,32 @@
+{
+    "name": "@h4v0c/input",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "dev": "onchange './src/**/*' -- npm run build",
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/h4v0c-npm/input.git"
+    },
+    "keywords": [],
+    "author": "John Wakley <john.wakley@icloud.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/h4v0c-npm/input/issues"
+    },
+    "homepage": "https://github.com/h4v0c-npm/input#readme",
+    "devDependencies": {
+        "@types/node": "^20.2.5",
+        "onchange": "^7.1.0",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "@h4v0c/event-emitter": "^1.0.1",
+        "gl-matrix": "^3.4.3"
+    }
+}
